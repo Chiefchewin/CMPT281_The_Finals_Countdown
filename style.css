@@ -1,0 +1,68 @@
+/* Maquinna Pley
+    EDJ324
+    11316131 */
+
+/* Setting up the background and layout */
+body {
+    margin: 0;
+    padding: 0;
+    background: #014421; /* dark forest green, best color ever */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.countdown-wrapper {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+
+    /* Set a maximum width*/
+    max-width: 800px;
+    
+    /* Additional styles to center the content if the screen is wider than the max-width */
+    margin: 0 auto; 
+}
+
+/* Using flexbox for the countdown layout */
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.time-section {
+    /* Adding CSS animations for visual enhancement */
+    animation: pulse 1s infinite;
+}
+
+/* CSS animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Additional styling for the page elements */
+.event-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.time-section span {
+    display: block;
+    font-size: 50px;
+}
+
+.time-section small {
+    font-size: 20px;
+}
